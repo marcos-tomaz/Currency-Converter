@@ -1,10 +1,12 @@
+## [Application Demo](https://currency-converter-marcos.web.app/)
+
 ## Requirements
 
 - Nodejs
 
 ## Running
 
-In order to run the application locally you need to install the packages by running the following command:
+In order to run the application locally you need to install the packages, you can do it by running the following command:
 ### `yarn`
 
 To start the environment run the command:
