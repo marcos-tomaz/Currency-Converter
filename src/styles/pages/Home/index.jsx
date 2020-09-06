@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import swal from 'sweetalert'
 import { FiArrowRight, FiRepeat } from 'react-icons/fi'
+import { AiFillGithub } from 'react-icons/ai'
 import { BsInbox } from 'react-icons/bs'
 
 import useLocalStorage from '../../../hooks/useLocalStorage'
@@ -33,7 +34,9 @@ import {
   LeftLine,
   LoadingWrapper,
   ExchangeHistoryHeader,
-  AsideContainer
+  AsideContainer,
+  Footer,
+  SocialButton
 } from './styles'
 
 function Home({
@@ -281,6 +284,14 @@ function Home({
           </ExchangeHistory>
         </AsideContainer>
       </ContentWrapper>
+      <Footer>
+        <SocialButton
+          tabIndex="-1"
+          href="https://github.com/marcos-tomaz/Currency-Converter"
+        >
+          <AiFillGithub />
+        </SocialButton>
+      </Footer>
     </Container>
   )
 }

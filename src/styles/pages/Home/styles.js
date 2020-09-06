@@ -4,6 +4,7 @@ import CurrencyMaskInput from 'react-currency-input'
 export const Container = styled.div`
   height: 100%;
   width: 100%;
+  min-height: 100vh;
 `
 
 export const ContentWrapper = styled.div`
@@ -14,7 +15,6 @@ export const ContentWrapper = styled.div`
     'header header'
     'exchange history'
     'footer footer';
-  min-height: 100vh;
   height: 100%;
   width: 100%;
   padding: 50px;
@@ -69,6 +69,7 @@ export const BlockWrapper = styled.form`
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  min-height: 75vh;
   grid-area: exchange;
 `
 
@@ -198,5 +199,28 @@ export const AsideContainer = styled.aside`
     grid-area: unset;
     position: absolute;
     left: 100%;
+  }
+`
+
+export const Footer = styled.footer`
+  grid-area: footer;
+  margin: 15px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`
+
+export const SocialButton = styled.a`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2.5em;
+  color: #ffffffaa;
+  transition: all ease-in-out 0.3s;
+  outline: none;
+
+  &:hover,
+  &:active {
+    transform: translateY(-3px);
   }
 `
